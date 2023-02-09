@@ -131,7 +131,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로또 번호 생성"/>
                                 <connections>
-                                    <action selector="makeLottoNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6m-qC-U8M"/>
+                                    <action selector="generateLottoNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jlp-CG-DpO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,17 +146,17 @@
                     </view>
                     <connections>
                         <outlet property="fifthImageView" destination="QY7-oG-QGY" id="2l1-ha-3w6"/>
-                        <outlet property="fifthNumber" destination="0zq-Ac-mmG" id="XYk-vb-j7A"/>
+                        <outlet property="fifthNumberLabel" destination="0zq-Ac-mmG" id="XYk-vb-j7A"/>
                         <outlet property="firstImageView" destination="LDr-Bw-xl6" id="QUb-4o-Dsy"/>
-                        <outlet property="firstNumber" destination="mTd-kE-s7f" id="kmo-SB-M3O"/>
+                        <outlet property="firstNumberLabel" destination="mTd-kE-s7f" id="kmo-SB-M3O"/>
                         <outlet property="fourthImageView" destination="yug-6f-t3j" id="jwf-3Z-xNS"/>
-                        <outlet property="fourthNumber" destination="kA5-8V-ely" id="0Bi-tg-VM0"/>
+                        <outlet property="fourthNumberLabel" destination="kA5-8V-ely" id="0Bi-tg-VM0"/>
                         <outlet property="secondImageView" destination="tR0-HO-Wv9" id="X9K-ma-lVC"/>
-                        <outlet property="secondNumber" destination="Iy7-nN-30x" id="Pgl-LQ-3aC"/>
+                        <outlet property="secondNumberLabel" destination="Iy7-nN-30x" id="Pgl-LQ-3aC"/>
                         <outlet property="sixthImageView" destination="iad-uu-JBY" id="6tB-uI-kTf"/>
-                        <outlet property="sixthNumber" destination="QCv-SZ-rsC" id="DXP-bn-ihq"/>
+                        <outlet property="sixthNumberLabel" destination="QCv-SZ-rsC" id="DXP-bn-ihq"/>
                         <outlet property="thirdImageView" destination="xqB-y0-Tse" id="yP8-nD-8nU"/>
-                        <outlet property="thirdNumber" destination="2Lo-sB-wf5" id="aKB-Ot-Hsc"/>
+                        <outlet property="thirdNumberLabel" destination="2Lo-sB-wf5" id="aKB-Ot-Hsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

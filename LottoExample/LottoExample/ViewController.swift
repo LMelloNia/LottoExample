@@ -47,8 +47,8 @@ extension ViewController {
                           secondNumberLabel,
                           thirdNumberLabel,
                           fourthNumberLabel,
-                          fifthNumberLabel
-                          ,sixthNumberLabel]
+                          fifthNumberLabel,
+                          sixthNumberLabel]
         
         let imageViewArray = [firstImageView,
                               secondImageView,
@@ -65,24 +65,28 @@ extension ViewController {
         rndArray = [Int](rndSet)
         rndArray.sort()
         
-        for a in labelArray {
-            a!.text = "\(rndArray[labelArray.firstIndex(of: a)!])"
+        for a in 0...5 {
+            if let label = labelArray[a] {
+                label.text = "\(rndArray[a])"
+            }
         }
         
-        for a in imageViewArray {
-            switch rndArray[imageViewArray.firstIndex(of: a)!]{
-            case 1...10:
-                a!.tintColor = UIColor.yellow
-            case 11...20:
-                a!.tintColor = UIColor.blue
-            case 21...30:
-                a!.tintColor = UIColor.red
-            case 31...40:
-                a!.tintColor = UIColor.gray
-            case 41...45:
-                a!.tintColor = UIColor.green
-            default:
-                break
+        for a in 0...5 {
+            if let imageView = imageViewArray[a] {
+                switch rndArray[a]{
+                case 1...10:
+                    imageView.tintColor = UIColor.yellow
+                case 11...20:
+                    imageView.tintColor = UIColor.blue
+                case 21...30:
+                    imageView.tintColor = UIColor.red
+                case 31...40:
+                    imageView.tintColor = UIColor.gray
+                case 41...45:
+                    imageView.tintColor = UIColor.green
+                default:
+                    break
+                }
             }
         }
     }
